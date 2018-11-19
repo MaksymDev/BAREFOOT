@@ -1,0 +1,97 @@
+
+//////////////////////////////
+//
+// COLORS
+//
+
+// PRIMARY PALETTE
+$pgt-primary: #d80c86;
+
+// GRAY SCALE
+$pgt-white: #fff;
+$pgt-black: #000;
+
+$pgt-gray-light: #afafaf;
+$pgt-gray-medium: #8e8e8e;
+$pgt-gray-dark: #434343;
+
+// Purple
+$pgt-purple: #7b2063;
+
+//Text Shadow
+$header-shadow: 2px 4px 3px rgba(0,0,0,0.16);
+$box-shadow: 2px 4px 3px rgba(0,0,0,0.16);
+$button-shadow: 2px 4px 3px rgba(0,0,0,0.16);
+
+
+//////////////////////////////
+//
+// BREAKPOINTS
+//
+
+// @TODO: Refactor this into a mixin/function, so all that's needed are the variable inputs below.
+
+// VARIABLE PIXEL AMOUNTS - Used in interpolations below
+$pgt-small-x-down: 639px;
+
+$pgt-small-up: 640px;
+$pgt-small-down: 767px; // Beaver Builder Setting
+
+$pgt-medium-up: 768px; // Beaver Builder Setting
+$pgt-medium-down: 991px; // Beaver Builder Setting
+
+$pgt-large-up: 992px; // Beaver Builder Setting
+
+
+// INTERPOLATED MEDIA QUERIES
+// USAGE: "@media #{$var} { property:value }
+$pgt-bp-x-sm-down: "screen and (max-width: #{$pgt-small-x-down})";
+
+$pgt-bp-sm-down: "screen and (max-width: #{$pgt-small-down})";
+
+$pgt-bp-sm: "screen and (min-width: #{$pgt-small-up}) and (max-width: #{$pgt-small-down})";
+
+$pgt-bp-med: "screen and (min-width: #{$pgt-medium-up}) and (max-width: #{$pgt-medium-down})"; // Anything within Beaver Builder default "Medium" settings
+
+$pgt-bp-med-down: "screen and (max-width: #{$pgt-medium-down})"; // Anything below the medium breakpoint.
+
+$pgt-bp-lg: "screen and (min-width: #{$pgt-large-up})"; // Anything within Beaver Builder "Large" settings
+
+
+
+//////////////////////////////
+//
+// FONTS
+//
+
+$pgt-font-family: 'Open Sans', Arial, sans-serif;
+$pgt-font-family-alt: 'Open Sans Condensed', 'Open Sans', Arial, sans-serif;
+
+$pgt-text-shadow: 3px 3px 6px rgba(0,0,0,0.7);
+
+
+//////////////////////////////
+//
+// GENERAL
+//
+
+// General Border Radius
+$pgt-border-radius: 4px;
+
+// Box Shadow for bottom
+$pgt-bottom-box-shadow: 0 0 8px 3px  rgba(0,0,0,0.4);
+
+// Pink Gradients
+$pgt-pink-bg-gradient: radial-gradient(circle at top left, $pgt-primary 60%, $pgt-purple);
+
+$pgt-callout-border-thin: 2px solid #bebebe;
+$pgt-callout-border-thick: 10px solid rgba(255,255,255,0.2);
+
+// Purple Gradients
+$pgt-purple-bg-gradient: radial-gradient(circle at top left, $pgt-purple 60%, $pgt-primary);
+
+// Gray Linear Gradient - To Top
+
+$pgt-gray-bottom-gradient: linear-gradient(0deg,#444,#000 50%,#000);
+
+
